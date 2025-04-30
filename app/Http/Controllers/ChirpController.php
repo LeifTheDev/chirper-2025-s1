@@ -79,7 +79,7 @@ class ChirpController extends Controller
 
         $chirp->update($validated);
 
-        return view('chirps.edit', compact(['chirp']));
+        return redirect(route('chirps.index'));
     }
 
     /**
